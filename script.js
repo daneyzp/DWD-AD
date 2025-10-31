@@ -57,7 +57,7 @@ function loadFiles() {
         });
       });
     })
-    .catch(()=>{ document.getElementById('fileContainer').innerHTML = "<p>Error loading files.</p>"; });
+    .catch(()=>{ document.getElementById('fileContainer').innerHTML = "<p>Error loading files. Please Refresh the Page again.</p>"; });
 }
 
 /* ðŸ”¹ Show Blogger Ad Overlay */
