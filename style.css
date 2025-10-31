@@ -1,5 +1,5 @@
 /*-----------------------------------
- 🔹 FILE VIEWER STYLES
+ ðŸ”¹ FILE VIEWER STYLES
 -----------------------------------*/
 bodyd {
   font-family: "Segoe UI", Arial, sans-serif;
@@ -18,11 +18,16 @@ bodyd {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background: #f9fafc;
   border-radius: 14px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   padding: 10px 14px;
   margin: 10px 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.file-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.12);
 }
 .file-icon {
   width: 60px;
@@ -31,6 +36,7 @@ bodyd {
   border-radius: 10px;
   background: #f0f0f0;
   object-fit: contain;
+  flex-shrink: 0;
 }
 .file-info {
   flex: 1;
@@ -53,20 +59,23 @@ bodyd {
 .download-btn {
   width: 48px;
   height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border-radius: 10px;
   background: #0078ff;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  flex-shrink: 0;
   transition: 0.3s;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 .download-btn:hover { background: #FF5800; }
 .download-btn svg { width: 24px; height: 24px; fill: #fff; }
 
 /*-----------------------------------
- 🔹 AD OVERLAY STYLES
+ ðŸ”¹ AD OVERLAY STYLES
 -----------------------------------*/
 #ad-overlayd {
   position: fixed;
