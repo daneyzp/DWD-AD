@@ -66,7 +66,7 @@ function showAdBeforeDownload(downloadLink){
   const container = document.getElementById("ad-container");
   const timerLabel = document.getElementById("ad-timer");
   const blogUrl = "https://dahcdn.blogspot.com";
-  const labels = ["Darma co","Dress","Shoes","Mobile"];
+  const labels = ["Darma co","Dress","Shoes","Mobile","Dot & Key","Cream"];
   const maxResults = 500;
   let collected = [], fetched = 0;
 
