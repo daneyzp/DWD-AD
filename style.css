@@ -1,0 +1,199 @@
+/*-----------------------------------
+ 🔹 FILE VIEWER STYLES
+-----------------------------------*/
+bodyd {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #eef2f6;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+#fileContainer {
+  width: 100%;
+  max-width: 720px;
+}
+.file-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 10px 14px;
+  margin: 10px 0;
+}
+.file-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  object-fit: contain;
+}
+.file-info {
+  flex: 1;
+  margin: 0 14px;
+  overflow: hidden;
+}
+.file-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-size {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+.download-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #0078ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+.download-btn:hover { background: #FF5800; }
+.download-btn svg { width: 24px; height: 24px; fill: #fff; }
+
+/*-----------------------------------
+ 🔹 AD OVERLAY STYLES
+-----------------------------------*/
+#ad-overlayd {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+}
+#ad-overlayd.hidden { display: none; }
+
+#ad-timer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.95);
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  cursor: default;
+  user-select: none;
+  z-index: 10000;
+}
+#ad-timer.closable {
+  cursor: pointer;
+  background: #2874f0;
+  color: #fff;
+  border-color: #2874f0;
+  transition: background 0.3s;
+}
+#ad-timer.closable:hover {
+  background: orange;
+  color: #000;
+}
+
+/* Centered ad card */
+#ad-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ad-cardd {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.5s ease;
+  margin: auto;
+}
+.ad-cardd:hover{
+transform: translateY(-5px);}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.ad-imaged {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.ad-imaged img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ad-imaged:hover img {
+transform: scale(1.05);}
+.ad-labeld {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(255,255,255,0.8);
+  color: #000;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+.ad-textd {
+  padding: 12px 15px 20px;
+  text-align: left;
+}
+.ad-textd h3 {font-family: Arial, sans-serif;font-weight: bold;
+  font-size: 1rem;
+  margin: 4px 0 8px;
+  color: #222;
+}
+.ad-textd .descd {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+.ad-buttond {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  background: #2874f0;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.ad-buttond:hover { background: orange; color: #000; }
+
+@media (max-width: 600px) {
+  .ad-cardd { max-width: 90%; }
+  #ad-timer { top: 10px; right: 10px; font-size: 12px; }
+}
