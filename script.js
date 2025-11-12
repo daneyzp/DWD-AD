@@ -19,6 +19,8 @@ const icons = {
   xml: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Deepin_Icon_Theme_%E2%80%93_text-xml_%289%29.svg",
 cpp: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
   CPP: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
+ c: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
+   C: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
   default: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyNCOzrzK3J0RskO1sKDtlFSkng5cq1Mn9vF7vjAAGMXbrOjqiEx2B6VL7prPKm_XiE_DE_89jiRg01npfB-BIoR7I9nSUqSbLvZG5DtCgs58Lx15Vzlzb_fHFGHWVrNSdNZVpWvNe3iO8dp0NPIOjAmIQtXY6sfNNh5hprqcB7hPpfmEOU3hgGrcxlP-1/s512/44386.png"
 };
 
